@@ -1,0 +1,12 @@
+extends layout
+
+block content 
+  <form method="POST" action="/new">
+    <label for="messageText"> Message Text:
+    <input name="messageText" type="text" >
+    <br>
+    <label for="authorName"> Author Name:
+    <input type="text" name="authorName">
+    <br>
+    <button type="submit">Submit</button>
+  </form>

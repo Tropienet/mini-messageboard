@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  each message in messages 
+    p This is the text of the message #{message.text}, and this is the user that wrote that text #{message.user} and they wrote it on this day #{message.added}
+  <a href="/new">Go to form</a>
+
+  
